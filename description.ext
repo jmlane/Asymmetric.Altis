@@ -1,0 +1,22 @@
+author="jmlane";
+OnLoadName = "Asymmetric Altis";
+OnLoadMission = "Altian have had enough of the illegitimate government placed by the AAF. Take back Altis by any means necessary.";
+
+class Header
+{
+    gameType = Sandbox;
+    minplayers = 1;
+    maxPlayers = 6;
+};
+
+enableDebugConsole = 1;
+
+saving = 0;
+
+respawn = "BASE";
+respawnOnStart = -1;
+respawnDialog = 0;
+respawnVehicleDelay = 600;
+respawnButton = 0;
+respawnTemplates[] = {"Revive", "MenuPosition"};
+reviveDelay= 45;
