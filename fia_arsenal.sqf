@@ -1,4 +1,6 @@
-private ["_availableHeadgear", "_availableGoggles", "_availableUniforms", "_availableVests", "_availableBackpacks"];
+private ["_crate", "_availableHeadgear", "_availableGoggles", "_availableUniforms", "_availableVests", "_availableBackpacks", "_items"];
+
+_crate = _this select 0;
 
 _availableHeadgear = [
   "H_Booniehat_khk",
@@ -40,27 +42,64 @@ _availableHeadgear = [
   "H_Bandanna_camo",
   "H_Shemag_khk",
   "H_Shemag_tan",
-	"H_ShemagOpen_khk",
-	"H_Watchcap_blk",
-	"H_PilotHelmetHeli_B",
-	"H_CrewHelmetHeli_B",
-	"H_PilotHelmetFighter_B",
-	"H_HelmetCrew_B"
+  "H_Shemag_olive",
+  "H_Shemag_olive_hs",
+  "H_ShemagOpen_khk",
+  "H_ShemagOpen_tan",
+  "H_Beret_blk",
+  "H_Beret_red",
+  "H_Beret_grn",
+  "H_Watchcap_blk",
+  "H_Watchcap_cbr",
+  "H_Watchcap_khk",
+  "H_Watchcap_camo",
+  "H_Watchcap_sgg",
+  "H_TurbanO_blk",
+  "H_StrawHat",
+  "H_StrawHat_Dark",
+  "H_Hat_blue",
+  "H_Hat_brown",
+  "H_Hat_camo",
+  "H_Hat_grey",
+  "H_Hat_checker",
+  "H_Hat_tan",
+  "H_Cap_marshal"
 ];
 
 _availableGoggles = [
-	"G_Combat",
-	"G_Lowprofile",
-	"G_Shades_Black",
-	"G_Shades_Blue",
-	"G_Shades_Green",
-	"G_Shades_Red",
-	"G_Sport_Blackred",
-	"G_Sport_Blackyellow",
-	"G_Squares_Tinted",
-	"G_Tactical_Black",
-	"G_Tactical_Clear",
-	"G_Bandanna_blk"
+  "G_Aviator",
+  "G_Balaclava_blk",
+  "G_Balaclava_combat",
+  "G_Balaclava_lowprofile",
+  "G_Balaclava_oli",
+  "G_Bandanna_aviator",
+  "G_Bandanna_beast",
+  "G_Bandanna_blk",
+  "G_Bandanna_khk",
+  "G_Bandanna_oli",
+  "G_Bandanna_shades",
+  "G_Bandanna_sport",
+  "G_Bandanna_tan",
+  "G_Combat",
+  "G_Lady_Blue",
+  "G_Lady_Dark",
+  "G_Lady_Mirror",
+  "G_Lady_Red",
+  "G_Lowprofile",
+  "G_Shades_Black",
+  "G_Shades_Blue",
+  "G_Shades_Green",
+  "G_Shades_Red",
+  "G_Spectacles",
+  "G_Spectacles_Tinted",
+  "G_Sport_Blackred",
+  "G_Sport_BlackWhite",
+  "G_Sport_Blackyellow",
+  "G_Sport_Checkered",
+  "G_Sport_Greenblack",
+  "G_Sport_Red",
+  "G_Squares",
+  "G_Squares_Tinted"
 ];
 
 _availableUniforms = [
@@ -87,16 +126,25 @@ _availableVests = [
 ];
 
 _availableBackpacks = [
-	"B_AssaultPack_rgr",
-	"B_AssaultPack_mcamo",
-	"B_Kitbag_rgr",
-	"B_Kitbag_mcamo",
-	"B_TacticalPack_blk",
-	"B_TacticalPack_mcamo"
+  "B_Kitbag_cbr",
+  "B_Kitbag_rgr",
+  "B_Kitbag_sgg",
+  "B_Carryall_oli",
+  "B_Carryall_khk",
+  "B_Carryall_cbr",
+  "B_TacticalPack_blk",
+  "B_TacticalPack_oli",
+  "B_TacticalPack_rgr"
+];
+
+_items = [
+  "ALiVE_Tablet"
 ];
 
 //Populate with predefined items and whatever is already in the crate
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
-[_crate,((itemCargo _crate) + _availableHeadgear + _availableGoggles + _availableUniforms + _availableVests)] call BIS_fnc_addVirtualItemCargo;
+[_crate,((itemCargo _crate) + _availableHeadgear + _availableGoggles + _availableUniforms + _availableVests + _items)] call BIS_fnc_addVirtualItemCargo;
 [_crate,(magazineCargo _crate)] call BIS_fnc_addVirtualMagazineCargo;
 [_crate,(weaponCargo _crate)] call BIS_fnc_addVirtualWeaponCargo;
+
+["AmmoboxInit", [_crate, false]] spawn BIS_fnc_arsenal;
