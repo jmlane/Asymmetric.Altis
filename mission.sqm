@@ -3103,7 +3103,7 @@ class Mission
 			vehicle="Land_PaperBox_closed_F";
 			skill=0.60000002;
 			text="FIA_Arsenal";
-			init="0 = [""AmmoboxInit"", [this, true]] spawn BIS_fnc_arsenal;";
+			init="0 = [this] execVM ""fia_arsenal.sqf"";";
 		};
 		class Item38
 		{
