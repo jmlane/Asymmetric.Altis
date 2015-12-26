@@ -205,7 +205,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4868.5371,254.34946,22131.318};
+					position[]={6458.4429,183.26875,20308.08};
 					class args
 					{
 						items=10;
@@ -672,7 +672,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="0.5";
+							value="0.9";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="reinforcements";
 						};
@@ -768,7 +768,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="200";
+							value="400";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
@@ -918,7 +918,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="100";
+							value="400";
 							parentCls="ALiVE_civ_placement";
 							typeName="size";
 						};
@@ -1877,19 +1877,19 @@ class Mission
 						};
 						class Item13
 						{
-							value="";
+							value="6";
 							parentCls="ALiVE_civ_placement";
 							typeName="customMotorisedCount";
 						};
 						class Item14
 						{
-							value="";
+							value="3";
 							parentCls="ALiVE_civ_placement";
 							typeName="customMechanisedCount";
 						};
 						class Item15
 						{
-							value="";
+							value="2";
 							parentCls="ALiVE_civ_placement";
 							typeName="customArmourCount";
 						};
@@ -3246,14 +3246,15 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4851.4336,343.88455,21945.758};
+			position[]={4881.5112,347.15488,21928.455};
 			name="respawn_west";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorWEST";
 			fillName="SolidBorder";
-			a=55;
-			b=55;
+			a=3;
+			b=8;
+			angle=115.21;
 			drawBorder=1;
 		};
 		class Item4
