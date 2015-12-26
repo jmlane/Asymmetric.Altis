@@ -2740,7 +2740,7 @@ class Mission
 						items=3;
 						class Item0
 						{
-							value="2";
+							value="1";
 							parentCls="ACE_moduleReviveSettings";
 							typeName="enableRevive";
 						};
