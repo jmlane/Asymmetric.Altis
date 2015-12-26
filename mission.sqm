@@ -3161,14 +3161,15 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4851.4336,343.88455,21945.758};
+			position[]={4881.5112,347.15488,21928.455};
 			name="respawn_west";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorWEST";
 			fillName="SolidBorder";
-			a=55;
-			b=55;
+			a=3;
+			b=8;
+			angle=115.21;
 			drawBorder=1;
 		};
 		class Item4
