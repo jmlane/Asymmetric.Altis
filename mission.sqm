@@ -667,7 +667,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="0.5";
+							value="0.9";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="reinforcements";
 						};
