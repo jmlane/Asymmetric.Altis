@@ -763,7 +763,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="200";
+							value="400";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
@@ -913,7 +913,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="100";
+							value="400";
 							parentCls="ALiVE_civ_placement";
 							typeName="size";
 						};
@@ -1872,19 +1872,19 @@ class Mission
 						};
 						class Item13
 						{
-							value="";
+							value="6";
 							parentCls="ALiVE_civ_placement";
 							typeName="customMotorisedCount";
 						};
 						class Item14
 						{
-							value="";
+							value="3";
 							parentCls="ALiVE_civ_placement";
 							typeName="customMechanisedCount";
 						};
 						class Item15
 						{
-							value="";
+							value="2";
 							parentCls="ALiVE_civ_placement";
 							typeName="customArmourCount";
 						};
