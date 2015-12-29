@@ -87,7 +87,6 @@ class Mission
 		"A3_Weapons_F_Bootcamp_Ammoboxes",
 		"A3_Soft_F_Truck",
 		"A3_Structures_F_Civ_Garbage",
-		"A3_Structures_F_EPB_Civ_Garbage",
 		"a3_map_altis"
 	};
 	randomSeed=13873534;
@@ -2827,7 +2826,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=40;
+		items=42;
 		class Item0
 		{
 			position[]={4849.2769,337.00208,21987.439};
@@ -3110,8 +3109,8 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={4913.0186,344.62994,21922.076};
-			azimut=-254.80013;
+			position[]={4905.7114,346.05289,21916.881};
+			azimut=-170.18845;
 			special="NONE";
 			id=63;
 			side="EMPTY";
@@ -3192,8 +3191,8 @@ class Mission
 		};
 		class Item38
 		{
-			position[]={4905.752,346.04044,21916.809};
-			azimut=81.4748;
+			position[]={4908.415,345.67633,21922.992};
+			azimut=119.61894;
 			special="NONE";
 			id=71;
 			side="EMPTY";
@@ -3202,12 +3201,29 @@ class Mission
 		};
 		class Item39
 		{
-			position[]={4906.9155,345.53403,21912.615};
-			azimut=71.168999;
-			special="NONE";
+			position[]={4910.8003,345.00015,21919.945};
+			azimut=8.9511967;
 			id=72;
 			side="EMPTY";
-			vehicle="Land_GarbageContainer_closed_F";
+			vehicle="Box_IND_AmmoVeh_F";
+			skill=0.60000002;
+		};
+		class Item40
+		{
+			position[]={4914.5127,344.23917,21919.385};
+			azimut=5.3665748;
+			id=73;
+			side="EMPTY";
+			vehicle="Box_IND_AmmoVeh_F";
+			skill=0.60000002;
+		};
+		class Item41
+		{
+			position[]={4912.604,344.58298,21919.635};
+			azimut=5.3665748;
+			id=74;
+			side="EMPTY";
+			vehicle="Box_IND_AmmoVeh_F";
 			skill=0.60000002;
 		};
 	};
