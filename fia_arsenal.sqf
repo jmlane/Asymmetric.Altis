@@ -1,8 +1,16 @@
-private ["_crate", "_availableHeadgear", "_availableGoggles", "_availableUniforms", "_availableVests", "_availableBackpacks", "_items"];
+private [
+  "_crate",
+  "_headgear",
+  "_goggles",
+  "_uniforms",
+  "_vests", 
+  "_backpacks",
+  "_items"
+];
 
 _crate = _this select 0;
 
-_availableHeadgear = [
+_headgear = [
   "H_Booniehat_khk",
   "H_Booniehat_oli",
   "H_Booniehat_indp",
@@ -66,7 +74,7 @@ _availableHeadgear = [
   "H_Cap_marshal"
 ];
 
-_availableGoggles = [
+_goggles = [
   "G_Aviator",
   "G_Balaclava_blk",
   "G_Balaclava_combat",
@@ -102,7 +110,7 @@ _availableGoggles = [
   "G_Squares_Tinted"
 ];
 
-_availableUniforms = [
+_uniforms = [
   "U_BG_Guerilla1_1",
   "U_BG_Guerilla2_1",
   "U_BG_Guerilla2_2",
@@ -113,7 +121,7 @@ _availableUniforms = [
   "U_BG_Guerrilla_6_1"
 ];
 
-_availableVests = [
+_vests = [
   "V_Rangemaster_belt",
   "V_BandollierB_khk",
   "V_BandollierB_cbr",
@@ -125,7 +133,7 @@ _availableVests = [
   "V_TacVest_oli"
 ];
 
-_availableBackpacks = [
+_backpacks = [
   "B_Kitbag_cbr",
   "B_Kitbag_rgr",
   "B_Kitbag_sgg",
@@ -141,10 +149,10 @@ _items = [
   "ALiVE_Tablet"
 ];
 
-//Populate with predefined items and whatever is already in the crate
-[_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
-[_crate,((itemCargo _crate) + _availableHeadgear + _availableGoggles + _availableUniforms + _availableVests + _items)] call BIS_fnc_addVirtualItemCargo;
-[_crate,(magazineCargo _crate)] call BIS_fnc_addVirtualMagazineCargo;
-[_crate,(weaponCargo _crate)] call BIS_fnc_addVirtualWeaponCargo;
+// Populate with predefined items and whatever is already in the crate
+[_crate, _backpacks] call BIS_fnc_addVirtualBackpackCargo;
+[_crate, ((itemCargo _crate) + _headgear + _goggles + _uniforms + _vests + _items)] call BIS_fnc_addVirtualItemCargo;
+[_crate, (magazineCargo _crate)] call BIS_fnc_addVirtualMagazineCargo;
+[_crate, (weaponCargo _crate)] call BIS_fnc_addVirtualWeaponCargo;
 
 ["AmmoboxInit", [_crate, false]] spawn BIS_fnc_arsenal;
