@@ -5,7 +5,8 @@ private [
   "_uniforms",
   "_vests", 
   "_backpacks",
-  "_items"
+  "_items",
+  "_action"
 ];
 
 _crate = _this select 0;
@@ -149,10 +150,39 @@ _items = [
   "ALiVE_Tablet"
 ];
 
-// Populate with predefined items and whatever is already in the crate
-[_crate, _backpacks] call BIS_fnc_addVirtualBackpackCargo;
-[_crate, ((itemCargo _crate) + _headgear + _goggles + _uniforms + _vests + _items)] call BIS_fnc_addVirtualItemCargo;
-[_crate, (magazineCargo _crate)] call BIS_fnc_addVirtualMagazineCargo;
-[_crate, (weaponCargo _crate)] call BIS_fnc_addVirtualWeaponCargo;
+// Conditional may need to go just before addAction, depends on MP tests.
+if (isNil {_crate getVariable "bis_fnc_arsenal_action"}) then {
+  ["Preload"] call BIS_fnc_arsenal;
 
-["AmmoboxInit", [_crate, false]] spawn BIS_fnc_arsenal;
+  // Populate with predefined items and whatever is already in the crate
+  [_crate, _backpacks] call BIS_fnc_addVirtualBackpackCargo;
+  [_crate, ((itemCargo _crate) + _headgear + _goggles + _uniforms + _vests + _items)] call BIS_fnc_addVirtualItemCargo;
+  [_crate, (magazineCargo _crate)] call BIS_fnc_addVirtualMagazineCargo;
+  [_crate, (weaponCargo _crate)] call BIS_fnc_addVirtualWeaponCargo;
+
+  _action = _crate addaction [
+    localize "STR_A3_Arsenal",
+    {
+      _box = _this select 0;
+      _unit = _this select 1;
+
+      _data = missionNamespace getVariable "bis_fnc_arsenal_data";
+      _backpack = backpack _unit;
+      _backpacks = _data select 5; // index of IDC_RSCDISPLAYARSENAL_TAB_BACKPACK
+
+      if !(_backpack in _backpacks) then {
+	_backpacks pushBack _backpack;
+      };
+
+      ["Open", [nil,_box,_unit]] call bis_fnc_arsenal;
+    },
+    [],
+    6,
+    true,
+    false,
+    "",
+    "alive _target && {_target distance _this < 5}"
+  ];
+
+  _crate SetVariable ["bis_fnc_arsenal_action", _action];
+};
