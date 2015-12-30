@@ -1228,7 +1228,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="1";
+							value="0";
 							parentCls="ALiVE_mil_placement_custom";
 							typeName="customMotorisedCount";
 						};
