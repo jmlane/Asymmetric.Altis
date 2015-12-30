@@ -2813,7 +2813,7 @@ class Mission
 			offsetY=1;
 			id=50;
 			side="EMPTY";
-			vehicle="Land_Camping_Light_F";
+			vehicle="Land_Camping_Light_off_F";
 			skill=0.60000002;
 		};
 		class Item21
