@@ -73,7 +73,6 @@ class Mission
 		"A3_Structures_F_EPB_Civ_Accessories",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Supplies_F_Heli_Bladders",
-		"A3_Structures_F_EPB_Civ_Camping",
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Items_Electronics",
 		"A3_Structures_F_Mil_Shelters",
@@ -3021,7 +3020,7 @@ class Mission
 		{
 			position[]={4912.604,344.58298,21919.635};
 			azimut=5.3665748;
-			id=72;
+			id=71;
 			side="EMPTY";
 			vehicle="Box_IND_AmmoVeh_F";
 			skill=0.60000002;
