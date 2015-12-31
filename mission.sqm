@@ -1750,31 +1750,31 @@ class Mission
 						};
 						class Item12
 						{
-							value="";
+							value="4";
 							parentCls="ALiVE_civ_placement";
 							typeName="customInfantryCount";
 						};
 						class Item13
 						{
-							value="6";
+							value="";
 							parentCls="ALiVE_civ_placement";
 							typeName="customMotorisedCount";
 						};
 						class Item14
 						{
-							value="3";
+							value="";
 							parentCls="ALiVE_civ_placement";
 							typeName="customMechanisedCount";
 						};
 						class Item15
 						{
-							value="2";
+							value="";
 							parentCls="ALiVE_civ_placement";
 							typeName="customArmourCount";
 						};
 						class Item16
 						{
-							value="";
+							value="4";
 							parentCls="ALiVE_civ_placement";
 							typeName="customSpecOpsCount";
 						};
