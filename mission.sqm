@@ -223,7 +223,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="25";
+							value="50";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="asym_occupation";
 						};
