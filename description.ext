@@ -14,9 +14,11 @@ enableDebugConsole = 1;
 saving = 0;
 
 respawn = "BASE";
+respawnDelay = 5;
 respawnOnStart = -1;
 respawnDialog = 0;
 respawnVehicleDelay = 600;
 respawnButton = 0;
-respawnTemplates[] = {"Revive", "MenuPosition"};
+respawnTemplates[] = {"Revive"};
 reviveDelay= 45;
+reviveBleedOutDelay = 180;
