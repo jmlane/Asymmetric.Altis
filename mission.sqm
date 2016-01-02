@@ -768,7 +768,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="Mechanized";
+							value="Motorized";
 							parentCls="ALiVE_mil_placement";
 							typeName="type";
 						};
@@ -1726,13 +1726,13 @@ class Mission
 						};
 						class Item8
 						{
-							value="Motorized";
+							value="Mechanized";
 							parentCls="ALiVE_civ_placement";
 							typeName="type";
 						};
 						class Item9
 						{
-							value="0.5";
+							value="0.25";
 							parentCls="ALiVE_civ_placement";
 							typeName="readinessLevel";
 						};
@@ -1750,7 +1750,7 @@ class Mission
 						};
 						class Item12
 						{
-							value="4";
+							value="";
 							parentCls="ALiVE_civ_placement";
 							typeName="customInfantryCount";
 						};
@@ -1774,7 +1774,7 @@ class Mission
 						};
 						class Item16
 						{
-							value="4";
+							value="";
 							parentCls="ALiVE_civ_placement";
 							typeName="customSpecOpsCount";
 						};
