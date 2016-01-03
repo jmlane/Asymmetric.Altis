@@ -1437,13 +1437,13 @@ class Mission
 						};
 						class Item5
 						{
-							value="0.1";
+							value="0.5";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_spawn_setting";
 						};
 						class Item6
 						{
-							value="99999";
+							value="700";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_DENSITY";
 						};
