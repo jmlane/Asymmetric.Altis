@@ -3389,7 +3389,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={5355.7559,265.68237,21583.561};
@@ -3422,14 +3422,14 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4880.3711,347.10165,21926.176};
+			position[]={4874.9165,347.01663,21928.689};
 			name="respawn_west";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorWEST";
 			fillName="SolidBorder";
 			a=3;
-			b=8;
+			b=6;
 			angle=115.21;
 			drawBorder=1;
 		};
@@ -3463,6 +3463,19 @@ class Mission
 			fillName="SolidBorder";
 			a=11;
 			b=11;
+			drawBorder=1;
+		};
+		class Item7
+		{
+			position[]={4890.291,347.28397,21931.734};
+			name="respawn_west_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorWEST";
+			fillName="SolidBorder";
+			a=3;
+			b=6;
+			angle=207.9687;
 			drawBorder=1;
 		};
 	};
