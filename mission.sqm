@@ -887,7 +887,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="TAOR_IND_F_NW, TAOR_IND_F_W, TAOR_BLU_G_F";
+							value="TAOR_IND_F_NW, TAOR_IND_F_W";
 							parentCls="ALiVE_civ_placement";
 							typeName="taor";
 						};
