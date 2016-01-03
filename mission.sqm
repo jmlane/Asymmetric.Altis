@@ -585,7 +585,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="TAOR_BLU_G_F, TAOR_IND_F_W, TAOR_IND_F_NW";
+							value="TAOR_BLU_G_F, TAOR_IND_F_W, TAOR_IND_F_NW, TAOR_INF_F_HQ";
 							parentCls="ALiVE_amb_civ_placement";
 							typeName="taor";
 						};
@@ -638,7 +638,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					description="North-west civilians (Higher density)";
+					description="North-west civilians";
 				};
 			};
 		};
