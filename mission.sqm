@@ -3124,7 +3124,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4881.5112,347.15488,21928.455};
+			position[]={4880.3711,347.10165,21926.176};
 			name="respawn_west";
 			markerType="RECTANGLE";
 			type="Empty";
