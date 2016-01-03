@@ -116,7 +116,7 @@ class Mission
 				class Item0
 				{
 					position[]={4878.082,339.58655,21968.863};
-					azimut=-386.83231;
+					azimut=-386.832;
 					special="NONE";
 					id=0;
 					side="WEST";
@@ -125,33 +125,38 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="PC_11_a1";
+					text="dagger1";
+					description="Dagger Team Leader";
 					syncId=0;
 					synchronizations[]={0,10,11,12};
 				};
 				class Item1
 				{
 					position[]={4874.3525,339.76431,21966.789};
-					azimut=-652.67737;
+					azimut=-652.677;
 					special="NONE";
 					id=1;
 					side="WEST";
 					vehicle="B_G_Soldier_LAT_F";
 					player="PLAY CDG";
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
+					text="dagger2";
+					description="Dagger Anti-Tank";
 				};
 				class Item2
 				{
 					position[]={4881.1978,340.07187,21966.121};
-					azimut=-385.26648;
+					azimut=-385.26599;
 					special="NONE";
 					id=2;
 					side="WEST";
 					vehicle="B_G_Soldier_AR_F";
 					player="PLAY CDG";
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
+					text="dagger3";
+					description="Dagger Autorifleman";
 				};
 				class Item3
 				{
@@ -162,32 +167,38 @@ class Mission
 					side="WEST";
 					vehicle="B_G_medic_F";
 					player="PLAY CDG";
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
+					text="dagger4";
+					description="Dagger Combat Life Saver";
 				};
 				class Item4
 				{
 					position[]={4876.1675,339.41452,21972.525};
-					azimut=-194.12692;
+					azimut=-194.127;
 					special="NONE";
 					id=4;
 					side="WEST";
 					vehicle="B_G_engineer_F";
 					player="PLAY CDG";
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
+					text="dagger5";
+					description="Dagger Engineer";
 				};
 				class Item5
 				{
 					position[]={4883.5415,339.46909,21968.578};
-					azimut=-54.183926;
+					azimut=-54.183899;
 					special="NONE";
 					id=5;
 					side="WEST";
-					vehicle="B_G_Soldier_exp_F";
+					vehicle="B_G_Soldier_A_F";
 					player="PLAY CDG";
-					rank="CORPORAL";
+					rank="SERGEANT";
 					skill=0.60000002;
+					text="dagger6";
+					description="Dagger Rifleman";
 				};
 			};
 		};
