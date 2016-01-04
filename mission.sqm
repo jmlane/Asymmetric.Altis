@@ -597,7 +597,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="250";
+							value="160";
 							parentCls="ALiVE_amb_civ_placement";
 							typeName="sizeFilter";
 						};
@@ -1740,7 +1740,7 @@ class Mission
 						};
 						class Item8
 						{
-							value="Mechanized";
+							value="Armored";
 							parentCls="ALiVE_civ_placement";
 							typeName="type";
 						};
