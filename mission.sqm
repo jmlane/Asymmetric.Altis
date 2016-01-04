@@ -615,7 +615,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="0.5";
+							value="1";
 							parentCls="ALiVE_amb_civ_placement";
 							typeName="placementMultiplier";
 						};
@@ -1734,7 +1734,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="200";
+							value="60";
 							parentCls="ALiVE_civ_placement";
 							typeName="size";
 						};
