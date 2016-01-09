@@ -9,10 +9,10 @@ Given the dynamic nature of the mission and the open-ended objective to pacify t
 The following mods should be installed on both clients and the server, unless otherwise specified.
 
 ### Required
+ * [CBA](https://github.com/CBATeam/CBA_A3), *a prerequisite of all the following mods*, available in the [Steam Workshop](http://steamcommunity.com/workshop/filedetails/?id=450814997).
  * [ALiVE v0.9.10](http://alivemod.com/#Download)
    - Server also requires additional ALiVE addon/config, more info on the [ALiVE wiki](http://alivemod.com/wiki/index.php/ALiVE_Data).
 
 ### Recommended
- * [CBA](https://github.com/CBATeam/CBA_A3), *a dependency of the following two mods*, available in the [Steam Workshop](http://steamcommunity.com/workshop/filedetails/?id=450814997).
  * [ACE3](http://ace3mod.com/), available in the [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=463939057).
  * [ASR AI 3](https://forums.bistudio.com/topic/163742-asr-ai-3/)
